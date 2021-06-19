@@ -1,0 +1,7 @@
+<h2>Modify {{ car && car.licensePlateNumber }}</h2>
+
+<app-car-form
+  *ngIf="car"
+  [(car)]="car"
+  (onSubmit)="onSubmit($event)"
+></app-car-form>

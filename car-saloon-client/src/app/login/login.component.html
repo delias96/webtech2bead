@@ -1,0 +1,23 @@
+<h2>Log in</h2>
+
+<p *ngIf="errorMessage" style="color: red">Error: {{ errorMessage }}</p>
+
+<form (ngSubmit)="onSubmit()" ngNativeValidate>
+  <div>
+    <label
+      ><span>Username</span>
+      <input type="text" name="username" [(ngModel)]="username" required
+    /></label>
+  </div>
+
+  <div>
+    <label
+      ><span>Password</span>
+      <input type="password" name="password" [(ngModel)]="password" required
+    /></label>
+  </div>
+
+  <div>
+    <input type="submit" value="Login" />
+  </div>
+</form>

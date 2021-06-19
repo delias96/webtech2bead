@@ -1,0 +1,47 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+tbody td:first-child,
+th:first-child {
+  text-align: center;
+}
+
+tbody td:last-child,
+th:last-child {
+  text-align: right;
+}
+
+td,
+th {
+  padding: 0.5rem;
+}
+
+thead tr {
+  background: #eee;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+table {
+  margin-bottom: 1rem;
+  background: white;
+}
+
+button {
+  background-color: #f44336;
+  border: 0;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}

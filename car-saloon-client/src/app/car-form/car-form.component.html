@@ -1,0 +1,52 @@
+<form (ngSubmit)="handleFormSubmit()" ngNativeValidate>
+  <label
+    ><span>License plate number (AAA-123)</span>
+    <input
+      type="text"
+      name="licensePlateNumber"
+      [(ngModel)]="formData.licensePlateNumber"
+      pattern="^[a-zA-Z]{3}-[0-9]{3}$"
+      required
+  /></label>
+
+  <label
+    ><span>Brand</span>
+    <input
+      type="text"
+      name="brandName"
+      [(ngModel)]="formData.brandName"
+      required
+  /></label>
+
+  <label
+    ><span>Model</span>
+    <input
+      type="text"
+      name="modelName"
+      [(ngModel)]="formData.modelName"
+      required
+  /></label>
+
+  <label
+    ><span>Fuel</span>
+    <select name="fuelType" [(ngModel)]="formData.fuelType" required>
+      <option value="benzin">benzin</option>
+      <option value="dizel">dizel</option>
+      <option value="elektromos">elektromos</option>
+      <option value="hibrid">hibrid</option>
+    </select>
+  </label>
+
+  <label
+    ><span>Date of manufacture</span
+    ><input
+      type="date"
+      name="dateOfManufacture"
+      [(ngModel)]="formData.dateOfManufacture"
+      required
+  /></label>
+
+  <div>
+    <input type="submit" value="Save" />
+  </div>
+</form>

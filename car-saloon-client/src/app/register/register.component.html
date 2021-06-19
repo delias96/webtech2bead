@@ -1,0 +1,38 @@
+<h2>Register</h2>
+
+<p *ngIf="errorMessage" style="color: red">Error: {{ errorMessage }}</p>
+<p *ngIf="success" style="color: green">
+  Successfull registration. Please
+  <a routerLink="/login" routerLinkActive="active">log in</a>.
+</p>
+
+<form (ngSubmit)="onSubmit()" ngNativeValidate>
+  <div>
+    <label
+      ><span>Username</span>
+      <input type="text" name="username" [(ngModel)]="username" required
+    /></label>
+  </div>
+
+  <div>
+    <label
+      ><span>Password</span>
+      <input type="password" name="password" [(ngModel)]="password" required
+    /></label>
+  </div>
+
+  <div>
+    <label
+      ><span>Confirm password</span>
+      <input
+        type="password"
+        name="confirmPassword"
+        [(ngModel)]="confirmPassword"
+        required
+    /></label>
+  </div>
+
+  <div>
+    <input type="submit" value="Register" />
+  </div>
+</form>

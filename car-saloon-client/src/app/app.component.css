@@ -1,0 +1,35 @@
+nav {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+header {
+  background: #eee;
+  padding: 2rem;
+  background: #8360c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2ebf91,
+    #8360c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2ebf91,
+    #8360c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+nav > a {
+  margin: 0 0.5rem;
+  color: #f6f6f6;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+}
